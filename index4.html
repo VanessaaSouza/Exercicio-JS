@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vanessa Souza" />
+    <title>Questões em JS</title>
+    <style>
+        h2{background-color:rgb(99, 4, 20);
+
+        }body{font-family: verdana;
+                color: DarkMagenta;
+                border: 2px solid Violet;
+                padding: 30px;
+
+        }button {
+				  border: 2px solid Violet;
+				  color: MediumVioletRed;
+				  padding: 16px 32px;
+				  text-align: center;
+				  text-decoration: none;
+				  display: inline-block;
+				  font-size: 16px;
+				  margin: 4px 2px;
+				  transition-duration: 0.4s;
+				  cursor: pointer;
+
+		}footer{
+                    background: Pink;
+                    border-top: 1px solid #333;
+                    bottom: 0;
+                    left: 0;
+                    height: 40px;
+                    position: fixed;
+                    width: 100%;
+
+        }
+            
+        
+        </style>
+</head>
+<body>
+    <h1> Questão 04</h1>
+    <h2>LuidyMoura</h2>
+    <form name="write">
+        Digite uma entrada:<input id="num1" type="number"> <br /><br>
+        <br>
+        <input type="button" value="Calcular" onClick="NumeroLimite()">
+        <br><br>
+
+        <div id='resposta'></div>
+        <script type="text/javascript">
+        
+        let Vanessa;
+        function NumeroLimite() {
+            let Vanessa = parseFloat(document.getElementById("num1").value);
+            ans = document.getElementById('resposta');
+        for ( let i = 1; i <= NumeroLimite; i++) {
+        if (i % 5 == 0) {
+            document.write='Luidy';}
+        if (i % 9 == 0) {
+            document.write='Moura';}
+        
+        if (i % 5 == 0 && i % 9 == 0){
+            document.write='LuidyMoura';}
+        }
+        
+        if (i % 5 != 0 && i % 9 != 0) 
+        document.write (i);
+        }
+        document.write.saida.value = Vanessa;
+        
+   
+</script>
+
+    <script src="questao4.js"></script>
+
+
+    <footer>
+        2022 - Todos os Dereitos Reservados :: Desenvolvido por:<a href="https://github.com/VanessaaSouza/vanessaasouza" target="_blank" id="_vanessa_souza_">Vanessa Souza</a>
+   </footer>
+</body>
+</html>

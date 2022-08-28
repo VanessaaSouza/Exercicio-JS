@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ptBR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Vanessa Souza" />
+    <title>Questões em JS</title>
+    <style>
+        h2{background-color:rgb(99, 4, 20);
+
+        }body{font-family: verdana;
+        color: DarkMagenta;
+        border: 2px solid Violet;
+        padding: 30px;
+
+        }button {
+          border: 2px solid Violet;
+          color: MediumVioletRed;
+          padding: 16px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          transition-duration: 0.4s;
+          cursor: pointer;
+
+        }footer{
+            background: Pink;
+            border-top: 1px solid #333;
+            bottom: 0;
+            left: 0;
+            height: 40px;
+            position: fixed;
+            width: 100%;
+
+        }
+            
+        
+        </style>
+</head>
+<body>
+    <h1> Questão 03</h1>
+    <h2>Sistema de Notas</h2>
+
+    1 Bimestre<input id="nota1" type="number" min="0" max="100"> <br />
+    2 Bimestre<input id="nota2" type="number" min="0" max="100"> <br />
+    3 Bimestre<input id="nota3" type="number" min="0" max="100"> <br />
+    4 Bimestre<input id="nota4" type="number" min="0" max="100"> <br />
+   <button onclick="media()">Calcular Média</button><br/>
+
+   <div id='resposta'></div>
+
+     <script>
+        function media(){
+            let nota1 = parseFloat(document.getElementById("nota1").value);
+            let nota2 = parseFloat(document.getElementById("nota2").value);
+            let nota3 = parseFloat(document.getElementById("nota3").value);
+            let nota4 = parseFloat(document.getElementById("nota4").value);
+            ans = document.getElementById('resposta');
+
+            let media = (nota1 + nota2 + nota3 + nota4)/4;
+
+            if (media < 38){
+                (media >= 38)
+                ans.innerHTML="Aluno foi reprovado";
+            }else{ 
+                ans.innerHTML ="Aluno foi aprovado";
+            }
+        }
+        
+            </script>
+                
+
+    <script src="questao3.js"></script>
+
+
+    <footer>
+        2022 - Todos os Dereitos Reservados :: Desenvolvido por:<a href="https://github.com/VanessaaSouza/vanessaasouza" target="_blank" id="_vanessa_souza_">Vanessa Souza</a>
+   </footer>
+</body>
+</html>
